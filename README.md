@@ -3,10 +3,10 @@ This MATLAB code accompanies the following publication:
 
 Zuure, M.B., & Cohen, M. X (2021). Narrowband multivariate source separation for semi-blind discovery of experiment contrasts. _Journal of Neuroscience Methods, 350_, 109063. DOI: https://doi.org/10.1016/j.jneumeth.2020.109063
 
-This code is suited only to analyze the dataset made available at data.donders.ru.nl (exact link to be updated).
+This code is suited only to analyze the dataset made available at the [Donders Institute data repository](https://doi.org/10.34973/pjq2-et81).
 
 ## Note on provided data
-The data available at data.donders.ru.nl consists of two folders.
+The data available [here](https://doi.org/10.34973/pjq2-et81) consists of two folders.
 - The `Data` folder, containing:
 	-  the MEG data for each subject
 	-  a [Brainstorm](https://neuroimage.usc.edu/brainstorm)-generated forward model, for use in the simulations
@@ -19,11 +19,11 @@ The materials provided in the `Results` folder are the results of intermediate p
 ## Dependencies
 - MATLAB; R2017b was used but earlier versions may work.
 - EEGlab toolbox, available [here](https://sccn.ucsd.edu/eeglab/index.php). We used v14.1.2.
- - The data set to be analyzed, available from data.donders.ru.nl.
+ - The data set to be analyzed, available [here](https://doi.org/10.34973/pjq2-et81).
 
 ## How to use
  1. Clone this repository (or download the files) to a location of your liking. 
- 2. Download the data set at <> and put it in the same location, so that on the same level as the `Scripts` folder there is a  `Data` folder containing files files `Sxx_data.mat`, etc., and a `Results` folder containing `Sxx_GED.mat`, etc.
+ 2. Download the [data set](https://doi.org/10.34973/pjq2-et81) and put it in the same location, so that on the same level as the `Scripts` folder there is a  `Data` folder containing files files `Sxx_data.mat`, etc., and a `Results` folder containing `Sxx_GED.mat`, etc.
  3. Change the hardcoded paths in`setdirs.m` to point to the different directories and dependencies listed above.
  4. In MATLAB, navigate to the `Scripts` folder and execute the csGED scripts in order. Scripts with `sim` generate and analyze the simulated data, scripts with `emp` analyze the empirical data. Whether you run the `sim` or `emp`  scripts first doesn't matter.
  5. After everything has been run, figure panels from the manuscript have been output to a `Figures` folder, and many additional plots have been output to the `Plots` folder.
