@@ -14,10 +14,7 @@ The data available at data.donders.ru.nl consists of two folders.
 	- csGED results (eigenvectors and eigenvalues at each frequency)
 	-  simulation results
 
-The materials provided in the `Results` folder are the results of intermediate processing steps, provided to save time (as some of the analysis steps are computationally intensive). The code checks whether these intermediate results are present and loads them. If they are not present, they will be generated from the materials in `Data`.[^1] [^2]
-
-[^1]: The recomputed GEDs may be subtly different from the ones provided. This is because the data was converted from double to single precision prior to distribution.
-[^2]: The recomputed simulations may also differ from the ones provided. The default random generator was changed in MATLAB 2019a, which may be the cause. Alternatively, if you've changed any of the simulation code, the code path may have diverged after setting the random seed, yielding different results.
+The materials provided in the `Results` folder are the results of intermediate processing steps, provided to save time (as some of the analysis steps are computationally intensive). The code checks whether these intermediate results are present and loads them. If they are not present, they will be generated from the materials in `Data`.<sup>[1](#fn1)</sup> <sup>[2](#fn2)</sup>
 
 ## Dependencies
 - MATLAB; R2017b was used but earlier versions may work.
@@ -42,3 +39,8 @@ This code is released under the MIT license.
 
 ## Contact
 For further questions regarding this code, please refer to the manuscript or contact me (Marrit Zuure) at my github-associated e-mail address.
+
+## Footnotes
+<a name="fn1">1</a>: The recomputed GEDs may be subtly different from the ones provided. This is because the data was converted from double to single precision prior to distribution.
+
+<a name="fn2">2</a>: The recomputed simulations may also differ from the ones provided. The default random generator was changed in MATLAB 2019a, which may be the cause. Alternatively, if you've changed any of the simulation code, the code path may have diverged after setting the random seed, yielding different results. The overall conclusions should be robust to these changes.
